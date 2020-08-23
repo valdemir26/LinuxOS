@@ -282,7 +282,7 @@ extras, que as vezes é incompatível dependendo da distribuição.
               sudo cp customizado/live/filesystem.manifest deepin/live/filesystem.manifest-desktop<br>sudo rm customizado/live/filesystem.squashfs<br>
               sudo mksquashfs customizando customizado/live/filesystem.squashfs</p>
               <p><div><strong>Definindo o nome da imagem ISO</strong></div>sudo deepin-editor customizado/README.diskdefines</p>
-              <p><div><strong>Gerando a imagem ISO</strong></div>sudo genisoimage -D -r -V “DeepinOS-20” -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o DeepinOS-20-desktop-amd64.iso customizado/</p>
+              <p><div><strong>Gerando a imagem ISO</strong></div>genisoimage -D -r -V “DeepinOS-20” -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o DeepinOS-20-desktop-amd64.iso customizado/</p>
               <p><div><strong>Criar o MD5 da ISO</strong></div>md5sum DeepinOS-20-desktop-amd64.iso > DeepinOS-20-desktop-amd64.iso,md5</p>
               <p><div><strong>Excluir o Diretório e subdiretório não vazio</strong></div><em>Para excluir o diretório e os subdiretórios que não estejam vazios, é necessário desmontar o ponto de montagem, use a opção -r (recursiva). Para ser claro, isso remove os diretórios e todos os arquivos e subdiretórios contidos neles</em>:
                   <div class="row">            
@@ -296,7 +296,9 @@ extras, que as vezes é incompatível dependendo da distribuição.
           </div>
         </div>
       </div>
-    </section>    
+    </section>
+
+    
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -334,4 +336,3 @@ extras, que as vezes é incompatível dependendo da distribuição.
   <script src="assets/js/main.js"></script>
     </body>
 </html>
-
