@@ -32,10 +32,10 @@
   <header id="header" class="d-flex flex-column justify-content-center">
     <nav class="nav-menu">
       <ul>
-        <li class="active"><a href="#hero"><i class="bx bxs-tachometer"></i> <span>Linux OS</span></a></li>
+        <li class="active"><a href="#hero"><i class="bx bx-tachometer"></i> <span>Linux OS</span></a></li>
         <li><a href="#linuxos"><i class="bx bxs-box"></i> <span>Requisitos</span></a></li>
         <li><a href="#services"><i class="bx bxs-server"></i> <span>Customizar</span></a></li>
-        <li><a href="#diretorios"><i class="bx bxs-folder"></i> <span>Iniciando</span></a></li>      
+        <li><a href="#diretorios"><i class="bx bxs-rename"></i> <span>Iniciando</span></a></li>      
       </ul>
     </nav>
   </header>
@@ -107,7 +107,7 @@ extras, que as vezes é incompatível dependendo da distribuição.
                 </svg>
                 <i class="bx bxs-box"></i>
               </div>
-              <h4><a href="#squashfs">Squashfs</a></h4>
+              <h4><a href="#squashfs"> squashfs</a></h4>
               <p>Primeiro passo, é ativar o módulo "squashfs" para prosseguir customizando</p>
             </div>
           </div>
@@ -117,10 +117,10 @@ extras, que as vezes é incompatível dependendo da distribuição.
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="../../../../external.html?link=http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
                 </svg>
-                <i class="bx bxs-rename"></i>
+                <i class="bx bxs-folder-open"></i>
               </div>
-              <h4><a href="#ambiente">Chroot</a></h4>
-              <p>É através do comando chroot, podemos transformar um diretório, no diretório raiz ('/').</p>
+              <h4><a href="#ambiente"> chroot</a></h4>
+              <p> O chroot é a ferramenta para transformar um diretório, no diretório raiz ('/').</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
@@ -129,10 +129,10 @@ extras, que as vezes é incompatível dependendo da distribuição.
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="../../../../external.html?link=http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
                 </svg>
-                <i class="bx bxs-tachometer"></i>
+                <i class="bx bxs-archive-in"></i>
               </div>
-              <h4><a href="#imagemiso">Imagem ISO</a></h4>
-              <p>Remover todas as configurações, e o cache do APT para diminuir a ISO a ser gerada</p>
+              <h4><a href="#imagemiso"> gisoimagem</a></h4>
+              <p> Ferramenta de criação da imagem ISO customizada</p>
             </div>
           </div>        
     </section>
@@ -147,11 +147,11 @@ extras, que as vezes é incompatível dependendo da distribuição.
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h5>Criando o diretório principal</h5>
-            <p>mkdir DeepinOS && cd DeepinOS</p>
+            <p>mkdir Deepin20 && cd Deepin20</p>
             <p><div><strong>Criando os subdiretórios</strong>
             </div>mkdir customizando<br>mkdir customizado<br>mkdir montagem<br>mkdir squashfs</p>
-            <p><div><strong>Copiar a imagem baixada para o diretório DeepinOS</strong>
-            </div>cp /home/valdemir/deepin-20Beta-desktop-amd64.iso /home/valdemir/DeepinOS<br>
+            <p><div><strong>Copiar a imagem baixada para o diretório Deepin20</strong>
+            </div>cp /home/valdemir/deepin-desktop-community-1001-amd64.iso /home/valdemir/Deepin20<br>
             <em>Onde o nome de usuário deve ser substituido pelo seu nome de usuário</em></p>
             <div class="row">                       
           </div>
@@ -171,8 +171,8 @@ extras, que as vezes é incompatível dependendo da distribuição.
             <h5>Este módulo deve está sempre carregado quando estiver customizando</h5>
             <p class="font-italic">
              Será solicitado a senha de usuário, assim que você concluir está etapa, você não prescisará repetir a parte de "Montar extrair copiar" novamente na próxima vez que você voltar a customizar, mas é nescessário repatir todos os outros passos.</p>
-            <p><div><strong>Carregando o módulo Squashfs</strong></div>sudo modprobe squashfs</p>
-            <p><div><strong>Comando para verificar se o modúlo está carregado</strong>
+            <p><div><strong>Carregando o módulo squashfs</strong></div>sudo modprobe squashfs</p>
+            <p><div><strong>Caso o modulo esteja carregado, o resultado será semelhante ao apresentado abaixo</strong>
             </div>lsmod | grep squashfs</p>
             </div>              
             </div>
@@ -195,7 +195,7 @@ extras, que as vezes é incompatível dependendo da distribuição.
               Esta etapa consiste em montar a ISO, extrair para o respectivo diretório, e copiar para o diretório de customização
               Depois que já estiver customizando não é nescessário passar toda vez por esta etapa, só se for a primeira vez, a não ser que você chegou ao final da customização e removeu todas as pastas, você pode customizar quanto tempo forem nescessário</p>
               <p><div><strong>Montar extrair copiar para os respectivos subdiretório de trabalho</strong>
-              </div>sudo mount -o loop deepin-20Beta-desktop-amd64.iso montagem<br>rsync --exclude=/live/filessystem.squashfs -a montagem/ customizado
+              </div>sudo mount -o loop deepin-desktop-community-1001-amd64.iso montagem<br>rsync --exclude=/live/filessystem.squashfs -a montagem/ customizado
               <br>sudo mount -t squashfs -o loop montagem/live/filesystem.squashfs squashfs<br>sudo cp -a squashfs/* customizando/</p>
                </div>              
             </div>
@@ -206,7 +206,7 @@ extras, que as vezes é incompatível dependendo da distribuição.
     <section id="ambiente" class="ambiente">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Configuração de ambiente ( chroot )</h2>
+          <h2>Configuração de ambiente</h2>
         </div>
         <div class="row">
           <div class="col-lg-4">
@@ -216,13 +216,13 @@ extras, que as vezes é incompatível dependendo da distribuição.
             <h5>Este módulo deve está sempre carregado sempre que estiver customizando</h5>
             <p class="font-italic">
              Depois que já estiver customizando não é nescessário passar toda vez por esta etapa, só se for a primeira vez, a não ser que você chegou ao final da customização e removeu todas as pastas, daí você terá que refazer este passo novamente, você pode customizar o tempo for nescessário até concluír seu objetivo.</p>
-            <p><div><strong>Configuração para execução de programas no modo chroot</strong></div>sudo mount -t none -o bind /tmp /home/valdemir/DeepinOS/customizando/tmp</p>
+            <p><div><strong>Configuração para execução de programas no modo chroot</strong></div>sudo mount -t none -o bind /tmp /home/valdemir/Deepin20/customizando/tmp</p>
             <p><div><strong>Arquivos de configuração de ambiente para uso do chroot</strong></div>sudo cp /etc/resolv.conf customizando/etc/
               <br>sudo cp /etc/hosts customizando/etc/<br>sudo mount --bind /dev/ customizando/dev<br>sudo chroot customizando
               <br>mount -t proc none /proc<br>mount -t sysfs none /sys<br>export HOME=/root<br>export DISPLAY=:0.0</p>
               <p><div><strong>Adicionando repositório</strong></div>sudo dde-file-manager etc/apt/sources.list</p>
               <p><div><strong>Atualizando o sistema</strong><br>apt update && apt full-upgrade</p>
-              <p><strong>Abra uma nova aba no terminal</strong><br>sudo dde-file-manager<br>/home/valdemir/DeepinOS/customizando/home<br>dpkg -i *.deb<br>apt -f install</p>
+              <p><strong>Abra uma nova aba no terminal</strong><br>sudo dde-file-manager<br>/home/valdemir/Deepin20/customizando/home<br>dpkg -i *.deb<br>apt -f install</p>
               <div class="row">            
               <div class="col-lg-6">
                 <ul>
@@ -282,13 +282,14 @@ extras, que as vezes é incompatível dependendo da distribuição.
               sudo cp customizado/live/filesystem.manifest deepin/live/filesystem.manifest-desktop<br>sudo rm customizado/live/filesystem.squashfs<br>
               sudo mksquashfs customizando customizado/live/filesystem.squashfs</p>
               <p><div><strong>Definindo o nome da imagem ISO</strong></div>sudo deepin-editor customizado/README.diskdefines</p>
-              <p><div><strong>Gerando a imagem ISO</strong></div>genisoimage -D -r -V “DeepinOS-20” -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o DeepinOS-20-desktop-amd64.iso customizado/</p>
-              <p><div><strong>Criar o MD5 da ISO</strong></div>md5sum DeepinOS-20-desktop-amd64.iso > DeepinOS-20-desktop-amd64.iso,md5</p>
+              <p><div><strong>Gerando a imagem ISO</strong></div>genisoimage -D -r -V “Deepin-20” -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o Deepin-20-community-desktop-amd64.iso customizado/</p>
+              <p><div><strong>Criar o MD5 da ISO</strong></div>md5sum Deepin-20-community-desktop-amd64.iso > Deepin-20-community-desktop-amd64.iso,md5</p>
               <p><div><strong>Excluir o Diretório e subdiretório não vazio</strong></div><em>Para excluir o diretório e os subdiretórios que não estejam vazios, é necessário desmontar o ponto de montagem, use a opção -r (recursiva). Para ser claro, isso remove os diretórios e todos os arquivos e subdiretórios contidos neles</em>:
+                <p><div><strong>Excluir o Diretório e subdiretório não vazio</strong></div><em>Para excluir o diretório e os subdiretórios que não estejam vazios, é necessário desmontar o ponto de montagem, use a opção -r (recursiva). Para ser claro, isso remove os diretórios e todos os arquivos e subdiretórios contidos neles</em>:
                   <div class="row">            
                     <div class="col-lg-6">
                       <ul>
-                        <li><strong>Diretório de customização<i class="icofont-rounded-right"></i></strong><br> sudo rm -r DeepinOS</li>
+                        <li><strong>Diretório de customização<i class="icofont-rounded-right"></i></strong><br> sudo rm -r Deepin20</li>
                       </ul>
                   </div>
             </div>                       
