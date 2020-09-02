@@ -218,7 +218,7 @@ extras, que as vezes é incompatível dependendo da distribuição.
             <p><div><strong>Arquivos de configuração de ambiente para uso do chroot</strong></div>sudo cp /etc/resolv.conf customizando/etc/
               <br>sudo cp /etc/hosts customizando/etc/<br>sudo mount --bind /dev/ customizando/dev<br>sudo chroot customizando
               <br>mount -t proc none /proc<br>mount -t sysfs none /sys<br>export HOME=/root<br>export DISPLAY=:0.0</p>
-              <p><div><strong>Adicionando repositório</strong></div>sudo dde-file-manager etc/apt/sources.list</p>
+              <p><div><strong>Adicionando repositório</strong></div>sudo dde-file-manager /etc/apt/sources.list</p>
               <p><div><strong>Atualizando o sistema</strong><br>apt update && apt full-upgrade</p>
               <p><strong>Abra uma nova aba no terminal</strong><br>sudo dde-file-manager<br>/home/valdemir/Deepin20/customizando/home<br>dpkg -i *.deb<br>apt -f install</p>
               <div class="row">            
